@@ -4,8 +4,7 @@ import {
   ChakraProvider,
   Button,
   Center,
-  Divider,
-  Spacer,
+  CardBody,
 } from "@chakra-ui/react";
 
 function App() {
@@ -14,7 +13,7 @@ function App() {
   return (
     <>
       <ChakraProvider>
-        <Box bg="#98e5ef">
+        <Box bg="#98e5ef" mt="20px">
           <Center
             fontSize={{ base: "3xl", sm: "6xl", md: "6xl", xl: "6xl" }}
             color="black"
