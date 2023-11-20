@@ -1,8 +1,6 @@
-# React + Vite
+Contador
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Se creo un contador que permita sumar, restar y resetear
+usando React y Chakra ui
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Entrando al siguiente link se puede probar:
