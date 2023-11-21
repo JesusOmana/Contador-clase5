@@ -33,20 +33,20 @@ function App() {
           >
             +
           </Button>
-          <Button
-            bg="black"
-            color="white"
-            onClick={() => setCount((count) => count - 1)}
-          >
-            -
-          </Button>
-          <Button
+                    <Button
             ml="20px"
             bg="black"
             color="white"
             onClick={() => setCount((count) => (count = 0))}
           >
             Restablecer
+          </Button>
+          <Button
+            bg="black"
+            color="white"
+            onClick={() => setCount((count) => count - 1)}
+          >
+            -
           </Button>
         </Box>
       </ChakraProvider>
