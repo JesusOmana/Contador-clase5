@@ -3,8 +3,12 @@ import {
   Box,
   ChakraProvider,
   Button,
-  Center,
+  Stack,
+  Heading,
+  Text,
   CardBody,
+  Card,
+  CardHeader,
 } from "@chakra-ui/react";
 
 function App() {
@@ -13,41 +17,55 @@ function App() {
   return (
     <>
       <ChakraProvider>
-        <Box bg="#98e5ef" mt="20px">
-          <Center
-            fontSize={{ base: "3xl", sm: "6xl", md: "6xl", xl: "6xl" }}
-            color="black"
-            as="span"
-            flex="1"
-            textAlign="left"
-          >
-            Contador = {count}
-          </Center>
-        </Box>
-        <Box align="center" bg="#DDF2FD" w="100%" p={4} color="white">
-          <Button
-            mx="20px"
-            bg="black"
-            color="white"
-            onClick={() => setCount((count) => count + 1)}
-          >
-            +
-          </Button>
+        <Box boxShadow="dark-lg">
+          <Card bg="#fb8cf5">
+            <CardHeader>
+              <Heading size="md" align="center" fontSize="4xl" mt="5">
+                Contador = {count}
+              </Heading>
+            </CardHeader>
+
+            <CardBody>
+              <Stack>
+                <Box>
+                  <Text pt="2" fontSize="sm"></Text>
+                  <Box
+                    boxShadow="dark-lg"
+                    p="6"
+                    rounded="md"
+                    align="center"
+                    bg="#ffc9ff"
+                    w="100%"
+                    color="white"
+                  >
                     <Button
-            ml="20px"
-            bg="black"
-            color="white"
-            onClick={() => setCount((count) => (count = 0))}
-          >
-            Restablecer
-          </Button>
-          <Button
-            bg="black"
-            color="white"
-            onClick={() => setCount((count) => count - 1)}
-          >
-            -
-          </Button>
+                      mx="10px"
+                      bg="black"
+                      color="white"
+                      onClick={() => setCount((count) => count + 1)}
+                    >
+                      +
+                    </Button>
+                    <Button
+                      bg="black"
+                      color="white"
+                      onClick={() => setCount((count) => (count = 0))}
+                    >
+                      Restablecer
+                    </Button>
+                    <Button
+                      ml="10px"
+                      bg="black"
+                      color="white"
+                      onClick={() => setCount((count) => count - 1)}
+                    >
+                      -
+                    </Button>
+                  </Box>
+                </Box>
+              </Stack>
+            </CardBody>
+          </Card>
         </Box>
       </ChakraProvider>
     </>
